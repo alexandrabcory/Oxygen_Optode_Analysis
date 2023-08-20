@@ -1,14 +1,13 @@
                   Introduction
 
 Oxygen optodes are colorimetric tools for obtaining spatially and temporally-resolved 
-O2 concentration across a 2-dimensional surface. Optodes are generally thin, rectangular, surfaces that have been coated in a dye that, when exposed to blue LED light, fluoresces two visible colors: red and green. The amount of red fluoresence is inversely proportional to O2 concentration, while the amount of green fluoresence is constant 
-across a range of O2 concentrations. We can thus generate calibration curves by examining the relationship between average O2 concentration vs. average ratio of (red green)/green. The calibration curves should be produced (in another script) prior to running this code. 
+O2 concentration across a 2-dimensional surface. Optodes are generally thin, rectangular, surfaces that have been coated in a dye that, when exposed to blue LED light, fluoresces two visible colors: red and green. The amount of red fluoresence is inversely proportional to O2 concentration, while the amount of green fluoresence is constant across a range of O2 concentrations. We can thus generate calibration curves by examining the relationship between average O2 concentration vs. average ratio of (red green)/green. The calibration curves should be produced (in another script) prior to running this code. 
 
 We use oxygen optodes to study the heterogeneity of O2 concentration across a vertical transect of incubated soil cores. For every two-minute interval, a new raw image file, showcasing three soil cores with adjoined fluorescing optodes, is created.
 
 The goals of this code are to:
 (1)	accept a folder full of raw image files (CR2)
-(2)	crop each image so that only one oxygen optodes is in the frame,  
+(2)	crop each image so that only one oxygen optodes is in the frame  
 (3)	 calculate O2 concentration for every pixel in the cropped image
 (4)	generate a heat map of O2 concentration 
 (5)	generate a histogram of O2 distribution
