@@ -18,32 +18,32 @@ The goals of this code are to:
 
 Prior to running this code, set up the following folder structure: 
 
--	a source folder, including: 
- o	main.py
- o	Step_1_Crop_Images.py
- o	Step_2_Calculate_Oxygen.py
- o	Step_3_Retrieve_DateTime_From_CR2.py
- o	Step_4_Make_Heat_Map.py
- o	Step_5_Make_Histogram.py
- o	Step_6_Make_O2_Csvs.py
- o	Step_7_Produce_Output_For_Folder.py
- o	CalCurveParams_AndCropParams_byOptode.csv
+a source folder, including: 
+- main.py
+- Step_1_Crop_Images.py
+- Step_2_Calculate_Oxygen.py
+- Step_3_Retrieve_DateTime_From_CR2.py
+- Step_4_Make_Heat_Map.py
+- Step_5_Make_Histogram.py
+- Step_6_Make_O2_Csvs.py
+- Step_7_Produce_Output_For_Folder.py
+- CalCurveParams_AndCropParams_byOptode.csv
 
--	an input folder containing:
-o	 a series of raw images (CR2)
- o	each image showcases three soil cores, each with an adjoined O2 optode (that should be visibly fluorescent.)
+an input folder containing:
+- a series of raw images (CR2)
+- each image showcases three soil cores, each with an adjoined O2 optode (that should be visibly fluorescent.)
 
--	a site-specific folder to hold all output. Title options include:
- o	Wetland
- o	Transition
- o	Upland
+a site-specific folder to hold all output. Title options include:
+- Wetland
+- Transition
+- Upland
 
--	The first of two output folders, located within the Site-Specific Folder (Wetland/Transition/Upland). This one stores:
- o	Histograms*
- o	heat maps*
+The first of two output folders, located within the Site-Specific Folder (Wetland/Transition/Upland). This one stores:
+- Histograms*
+- heat maps*
 
--	The second of two output folders, located within the Site-Specific Folder (Wetland/Transition/Upland). This one stores:
- o	CSVs of pixel-specific O2 concentrations (uM)**
+The second of two output folders, located within the Site-Specific Folder (Wetland/Transition/Upland). This one stores:
+- CSVs of pixel-specific O2 concentrations (uM)**
 
 *For every original raw image, one of these files are produced.
 ** These CSV files have the same dimensions as the raw image (in pixels). 
