@@ -42,8 +42,8 @@ Two subfolders in each of the site-specific folders (above):
 - CsvsOfOxygen**
 - HistogramsAndHeatMaps**
 
-* Each raw image file showcases three soil cores, each with an adjoined oxygen optode (that is fluorescing visibly red).
-** The CsvsOfOxygen folder is populated by csv files of pixel-specific O2 concentrations (in uM)
-*** Histograms and heat maps showcase the distribution of O2 concentration (in uM)
+ * Each raw image file showcases three soil cores, each with an adjoined oxygen optode (that is fluorescing visibly red).
+ ** The CsvsOfOxygen folder is populated by csv files of pixel-specific O2 concentrations (in uM)
+ *** Histograms and heat maps showcase the distribution of O2 concentration (in uM)
 
 
