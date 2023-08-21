@@ -31,7 +31,7 @@ a Scripts folder, including:
 - 
 an input folder, containing:
 - CalCurveParams_AndCropParams_byOptode.csv
-- rawImages folder, which contains a series of raw images (CR2 files)*; 
+- rawImages folder, which contains a series of raw images (CR2 files)
 
 an output folder containing three site-specific folders:
 - Wetland
@@ -39,11 +39,6 @@ an output folder containing three site-specific folders:
 - Upland
 
 Two subfolders in each of the site-specific folders (above):
-- CsvsOfOxygen**
-- HistogramsAndHeatMaps**
-
- * Each raw image file showcases three soil cores, each with an adjoined oxygen optode (that is fluorescing visibly red).
- ** The CsvsOfOxygen folder is populated by csv files of pixel-specific O2 concentrations (in uM)
- *** Histograms and heat maps showcase the distribution of O2 concentration (in uM)
-
+- CsvsOfOxygen -- populated by csv files of pixel-specific O2 concentrations (uM)
+- HistogramsAndHeatMaps -- shows distribution of O2 concentration (uM)
 
