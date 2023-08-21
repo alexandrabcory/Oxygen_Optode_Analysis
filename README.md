@@ -17,9 +17,9 @@ The goals of this code are to:
 
 All scripts are located in the folder 'Scripts'. All executions are performed in 'main.py' file.
 
-Prior to running the code, set up the following folder structure (which matches the folder structure here on Git): 
+Prior to running the code, set create the following folders (which match the folder structure here on Git): 
 
-a Scripts folder, including: 
+..a Scripts folder, including: 
 - main.py
 - Step_1_Crop_Images.py
 - Step_2_Calculate_Oxygen.py
@@ -29,16 +29,16 @@ a Scripts folder, including:
 - Step_6_Make_O2_Csvs.py
 - Step_7_Produce_Output_For_Folder.py
   
-an input folder, containing:
+..an input folder, containing:
 - CalCurveParams_AndCropParams_byOptode.csv
 - rawImages folder, which contains a series of raw images (CR2 files)
 
-an output folder containing three site-specific folders:
+..an output folder containing three site-specific folders:
 - Wetland
 - Transition
 - Upland
 
-Two subfolders in each of the site-specific folders (above):
+..two subfolders in each of the site-specific folders (above):
 - CsvsOfOxygen -- populated by csv files of pixel-specific O2 concentrations (uM)
 - HistogramsAndHeatMaps -- shows distribution of O2 concentration (uM)
 
