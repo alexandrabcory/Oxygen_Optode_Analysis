@@ -6,7 +6,7 @@ Created on Sun Aug 20 13:47:31 2023
 """
 
 ################    STEP 6: Make Two CSV Files of Pixel-Specific O2 Concentration (same dimensions as the image)  #####################
-################    .................one of the csv files is in epoch time and one is human-readable time
+################    .................one of the csv files is in epoch time and one is human-readable time         #####################
 
 import Step_2_Calculate_Oxygen as step2
 import Step_3_Retrieve_DateTime_From_CR2 as step3
@@ -25,7 +25,7 @@ def saveO2ConcToCSVs(imageName, inputFolderPath, outputFolderPath_2, csv_calCurv
     #         (11) days to add to original date stamp- default is 0
     #         (12) site- three options: "Wetland", "Transition", "Upland"
      
-    # Get coordinates for cropping
+    # Get the file path for given image
     filePath = inputFolderPath + '/' + imageName
     
     # Get a dataframe of all O2 concentrations (this has the dimensions of the image)
