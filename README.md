@@ -20,7 +20,7 @@ All scripts are located in the folder 'Scripts'. All executions are performed in
 Prior to running the code, set create the following folders (which match the folder structure here on Git): 
 
 ..a Scripts folder, including: 
-- main.py
+- main.py   <- this is where the exucition is performed
 - Step_1_Crop_Images.py
 - Step_2_Calculate_Oxygen.py
 - Step_3_Retrieve_DateTime_From_CR2.py
