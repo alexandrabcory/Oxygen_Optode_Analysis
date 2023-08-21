@@ -11,22 +11,6 @@ import Step_3_Retrieve_DateTime_From_CR2 as step3
 import matplotlib.pyplot as plt
 import os
 
-# Create a probability distribution function; this will be fit on top of the histogram
-def modelLognormalDistribution(data, size=1000):
-    # Returns x and y values for a log-normal distribution; these values are meant to fit the data plotted in a histogram
-    # inputs: (1) data= the O2 concentration (pixel-specific) data
-    #         (2) the number of modeled data points to generate per axis (x and y)
-    min_value = np.min(data)
-    max_value = np.max(data)
-    
-    params = lognorm.fit(data)
-
-    # Generate x and y values for log-normal distribution
-    x = np.linspace(min_value, max_value, size)
-    y = lognorm.pdf(x, *params)
-    
-    return x, y
-
 def createAndSaveHistogramAndRaster(imageName, inputFolderPath, outputFolderPath_1, csv_calCurveParamsByOptode, resolutionDecreaseFactor, bins, optodeNumber, xMin, xMax, yMin, yMax, daysToAdd, maxO2ToPlot):
     # saves a histogram image of O2 concentration distribution
     # inputs: (1) image name
@@ -59,9 +43,6 @@ def createAndSaveHistogramAndRaster(imageName, inputFolderPath, outputFolderPath
 
     # make a histogram
     freq, bins, patches = plt.hist(O2Concentrations_screened, bins=bins, density=True, color='green', alpha=0.5)
-
-    # plot modeled values
-    x_modeled, y_modeled = modelLognormalDistribution(O2Concentrations_screened, size=1000)
 
     # clean up the figure 
     plt.tick_params(axis='both', which='major', labelsize=14)
