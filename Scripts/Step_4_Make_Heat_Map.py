@@ -5,7 +5,7 @@ Created on Sun Aug 20 12:50:28 2023
 @author: ACORY
 """
 
-import Step_2_Calculate_Oxygen as O2
+import Step_2_Calculate_Oxygen as step2
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.colors as colors
@@ -32,7 +32,7 @@ def plotRaster(imageName, inputFolderPath, outputFolderPath, csv_calCurveParamsB
     filePath=inputFolderPath + '/' + imageName
     
     # get a dataframe of O2 concentrations across space 
-    df = O2. makeDfOfO2Concentrations(filePath, csv_calCurveParamsByOptode, resolutionDecreaseFactor, xMin, xMax, yMin, yMax, optodeNumber)
+    df = step2. makeDfOfO2Concentrations(filePath, csv_calCurveParamsByOptode, resolutionDecreaseFactor, xMin, xMax, yMin, yMax, optodeNumber)
     
     # convert the dataframe to an array to and clip the array to the desired range
     array = df.values
