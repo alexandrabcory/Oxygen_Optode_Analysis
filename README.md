@@ -28,7 +28,7 @@ a Scripts folder, including:
 - Step_5_Make_Histogram.py
 - Step_6_Make_O2_Csvs.py
 - Step_7_Produce_Output_For_Folder.py
-- 
+  
 an input folder, containing:
 - CalCurveParams_AndCropParams_byOptode.csv
 - rawImages folder, which contains a series of raw images (CR2 files)
