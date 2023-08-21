@@ -15,9 +15,11 @@ The goals of this code are to:
 
                   Folder Structure
 
-Prior to running this code, set up the following folder structure: 
+All scripts are located in the folder 'Scripts'. All executions are performed in 'main.py' file.
 
-a source folder, including: 
+Prior to running the code, set up the following folder structure (which matches the folder structure here on Git): 
+
+a Scripts folder, including: 
 - main.py
 - Step_1_Crop_Images.py
 - Step_2_Calculate_Oxygen.py
@@ -26,24 +28,22 @@ a source folder, including:
 - Step_5_Make_Histogram.py
 - Step_6_Make_O2_Csvs.py
 - Step_7_Produce_Output_For_Folder.py
+- 
+an input folder, containing:
 - CalCurveParams_AndCropParams_byOptode.csv
+- rawImages folder, which contains a series of raw images (CR2 files)*; 
 
-an input folder containing:
-- a series of raw images (CR2)
-- each image showcases three soil cores, each with an adjoined O2 optode (that should be visibly fluorescent.)
-
-a site-specific folder to hold all output. Title options include:
+an output folder containing three site-specific folders:
 - Wetland
 - Transition
 - Upland
 
-The first of two output folders, located within the Site-Specific Folder (Wetland/Transition/Upland). This one stores:
-- Histograms*
-- heat maps*
+Two subfolders in each of the site-specific folders (above):
+- CsvsOfOxygen**
+- HistogramsAndHeatMaps**
 
-The second of two output folders, located within the Site-Specific Folder (Wetland/Transition/Upland). This one stores:
-- CSVs of pixel-specific O2 concentrations (uM)**
+* Each raw image file showcases three soil cores, each with an adjoined oxygen optode (that is fluorescing visibly red).
+** The CsvsOfOxygen folder is populated by csv files of pixel-specific O2 concentrations (in uM)
+*** Histograms and heat maps showcase the distribution of O2 concentration (in uM)
 
-*For every original raw image, one of these files are produced.
-** These CSV files have the same dimensions as the raw image (in pixels). 
 
