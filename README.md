@@ -11,7 +11,7 @@ The goals of this code are to:
 -  calculate O2 concentration for every pixel in the cropped image
 -  generate a heat map of O2 concentration
 -  generate a histogram of O2 distribution
--  a csv file containing pixel-specific O2 concentrations.This is used as an input to the DAMM-GHG model (separate script). 
+-  generate a csv file containing pixel-specific O2 concentrations.This is used as an input to the DAMM-GHG model (separate script). 
 
                   Folder Structure
 
